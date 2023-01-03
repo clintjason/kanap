@@ -1,4 +1,4 @@
-import { Utils } from "./utils.class.js";
+import { Utils } from "../Utils/utils.class.js";
 export class ModelManager {
 
   /**
@@ -7,6 +7,19 @@ export class ModelManager {
    */
   static getCart() {
     return JSON.parse(localStorage.getItem('cart'));
+  }
+
+  /**
+   * Function to return array of product Ids.
+   * @returns { Array } Returns and Arrays of Product Ids
+   */
+  static productIds () {
+    const cart = ModelManager.getCart();
+    let products;
+    if(cart) {
+      products = cart.map(item => item.id)
+    }
+    return products;
   }
 
   /**

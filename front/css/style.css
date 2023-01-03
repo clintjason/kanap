@@ -23,6 +23,10 @@ h2 {
 	height: 100px;
 }
 
+.t-center {
+	text-align: center;
+}
+
 .error {
 	color: red;
 	letter-spacing: 2px;

@@ -1,8 +1,8 @@
-import { ApiRequest } from './api.class.js';
-import { Utils } from "./utils.class.js";
-import { ManipulateDOM } from './manipulateDOM.class.js';
-import { ErrorHandler } from './errorHandler.class.js';
-import { ModelManager } from './model.class.js';
+import { ApiRequest } from './Service/api.class.js';
+import { Utils } from "./Utils/utils.class.js";
+import { ManipulateDOM } from './View/manipulateDOM.class.js';
+import { ErrorHandler } from './Utils/errorHandler.class.js';
+import { ModelManager } from './Model/model.class.js';
 
 
 function goToCart() {

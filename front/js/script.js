@@ -1,8 +1,8 @@
-import { ApiRequest } from './api.class.js';
-import { ManipulateDOM } from './manipulateDOM.class.js';
-import { ErrorHandler } from './errorHandler.class.js';
+import { ApiRequest } from './Service/api.class.js';
+import { ManipulateDOM } from './View/manipulateDOM.class.js';
+import { ErrorHandler } from './Utils/errorHandler.class.js';
 
-(async ()=> {
+(async () => {
   try {
     const products = await ApiRequest.getAllKanaps();
     console.log(products);
