@@ -134,7 +134,7 @@ export class FormValidation {
     document.getElementById("order").addEventListener("click", (e) => {
       e.preventDefault();
       let cart = JSON.parse(localStorage.getItem('cart'));
-      if(!cart || cart.length > 0) {
+      if(!cart || cart.length <= 0) {
         ErrorHandler.displayCartError('#cart__items');
         return ;
       }
