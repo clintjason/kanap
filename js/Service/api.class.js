@@ -3,7 +3,7 @@ export class ApiRequest {
 
   /**
    * Returns backend entry point.
-   * @returns { String } The value of a private endpoint string.
+   * @returns { String } The value of a private static endpoint string.
    */
   static getEndPoint() {
     return ApiRequest.#endpoint;

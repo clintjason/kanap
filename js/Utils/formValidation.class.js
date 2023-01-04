@@ -10,7 +10,7 @@ export class FormValidation {
 
   /**
    * Regew Method to Test if the input argument is valide
-   * @param { String } value Receives a String value
+   * @param { String } value - Receives a String value
    * @returns { BOOLEAN } Returns True or False
    */
   static textValidation(value) {
@@ -19,7 +19,7 @@ export class FormValidation {
 
   /**
    * Regew Method to Test if the Address input argument is valid
-   * @param { String } value Receives a String value
+   * @param { String } value - Receives a String value
    * @returns { BOOLEAN } Returns True or False
    */
   static addressValidation = (value) => {
@@ -28,7 +28,7 @@ export class FormValidation {
 
   /**
    * Regex Method to Test if the email input argument is valide
-   * @param { String } value Receives a String value
+   * @param { String } value - Receives a String value
    * @returns { BOOLEAN } Returns True or False
    */
   static emailValidation = (value) => {
@@ -37,7 +37,7 @@ export class FormValidation {
 
   /**
    * Check if the firstName of the Form Field is Valid
-   * @param {Event} event object 
+   * @param {Event} event - An event Object 
    * @returns { Boolean } Returns true or false
    */
   static checkfirstName (event) {
@@ -55,7 +55,7 @@ export class FormValidation {
 
   /**
    * Check if the lastName of the Form Field is Valid
-   * @param {Event} event object 
+   * @param {Event} event - An event Object 
    * @returns { Boolean } Returns true or false
    */
   static checklastName (event) {
@@ -73,7 +73,7 @@ export class FormValidation {
 
   /**
    * Check if the city of the Form Field is Valid
-   * @param {Event} event object 
+   * @param {Event} event - An event Object 
    * @returns { Boolean } Returns true or false
    */
   static checkCity (event) {
@@ -91,7 +91,7 @@ export class FormValidation {
 
   /**
    * Check if the Address of the Form Field is Valid
-   * @param {Event} event object 
+   * @param {Event} event - An event Object 
    * @returns { Boolean } Returns true or false
    */
   static checkAddress (event) {
@@ -109,7 +109,7 @@ export class FormValidation {
 
   /**
    * Check if the Email of the Form Field is Valid
-   * @param {Event} event object 
+   * @param {Event} event - An event Object 
    * @returns { Boolean } Returns true or false
    */
   static checkEmail (event) {
@@ -126,8 +126,8 @@ export class FormValidation {
   }
 
   /**
-   * Submit
-   * @param {Array} array of product Ids 
+   * Submit The Form
+   * @param {Array} ProductIds - Array of Product Ids 
    * @returns { Boolean } Redirects to confirmation page
    */
   static submitForm(productIds) {
@@ -167,5 +167,4 @@ export class FormValidation {
       }
     })
   }
-
 }

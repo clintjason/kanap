@@ -4,7 +4,9 @@ import { ManipulateDOM } from './View/manipulateDOM.class.js';
 import { ErrorHandler } from './Utils/errorHandler.class.js';
 import { ModelManager } from './Model/model.class.js';
 
-
+/**
+ * Redirects to Cart or Home Page
+ */
 function goToCart() {
   if (confirm("Continue to Checkout 🎉?") == true) {
     window.location.href = "../html/cart.html"

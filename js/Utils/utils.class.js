@@ -1,7 +1,7 @@
 export class Utils {
   /**
    * Check if the Product Quantity is between 1 && 100
-   * @param { Number } qty - Product Quantity 
+   * @param { Number } qty - The Product's Quantity 
    * @returns { Boolean } - Returns True when the Quantity passes the Test and False otherwise
    */
   static checkValidQty(qty) {
@@ -29,7 +29,7 @@ export class Utils {
   }
 
   /**
-  * Get the Product Selected Color
+  * Get the Product's Selected Color
   * @returns { String } Color - It will return a color value or an empty string
   */
   static getProductSelectedColor() {

@@ -11,7 +11,7 @@ export class ModelManager {
 
   /**
    * Function to return array of product Ids.
-   * @returns { Array } Returns and Arrays of Product Ids
+   * @returns { Array } - Returns and Arrays of Product Ids
    */
   static productIds () {
     const cart = ModelManager.getCart();
@@ -24,7 +24,7 @@ export class ModelManager {
 
   /**
   * Adds a product to the Cart
-  * @param { Object } product  - The product object
+  * @param { Object } product  - The product object to be added to the cart
   */
   static addItemToCart(product) {
     let cart = ModelManager.getCart();
@@ -35,7 +35,7 @@ export class ModelManager {
 
   /**
   * Creates The Product Model
-  * @param { Object } product - Product Object
+  * @param { Object } product - A Product Object
   * @param { String } color - A String Value
   * @param { Number } qty - The Quantity of product selected
   * @returns { Object.<{ id: String, name: String, price: String, color: String, qty: Number, imageUrl: String }>}
