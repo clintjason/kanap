@@ -1,5 +1,5 @@
 export class ApiRequest {
-  static #endpoint = "http://localhost:3000/api/products/";
+  static #endpoint = "https://hilarious-pink-fossa.cyclic.app/api/products/";
 
   /**
    * Returns backend entry point.
