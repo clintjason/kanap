@@ -9,4 +9,5 @@ as it's coded in modules. You must serve the front-end from a server and navigat
 
 ### Website Links ###
 Link to the Website: https://clintjason.github.io/kanap/html/index.html
+
 Link to the Docs: https://clintjason.github.io/kanap/docs/index.html
