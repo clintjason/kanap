@@ -1,6 +1,8 @@
 import { Utils } from "../Utils/utils.class.js";
+/**
+ * A class to perform data manipulations on the application data in the localStorage
+ */
 export class ModelManager {
-
   /**
    * Get the Cart information
    * @returns { Array.<Object> | null } - Returns an Array of Objects

@@ -1,4 +1,12 @@
+/**
+ * A class to manage all API Requests
+ */
 export class ApiRequest {
+
+  /**
+   * API ENTRY POINT
+   * @static {string} API Entry Point in Production Mode
+   */
   static #endpoint = "https://hilarious-pink-fossa.cyclic.app/api/products/";
 
   /**
@@ -27,7 +35,7 @@ export class ApiRequest {
 
   /**
    * Function to place an order given a data of form (contact:contact<Object>, productIds<Array>)
-   * @returns { Object } Returns a Kanap Object containing the orderId
+   * @returns {{contact: object, orderId: string, products: string} | Promise } Returns a Kanap Object containing the orderId or a Promise error to be resolved.
    */
   static async placeOrder (data) {
     return await fetch(ApiRequest.getEndPoint() + 'order', {

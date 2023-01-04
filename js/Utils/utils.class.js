@@ -1,3 +1,6 @@
+/**
+ * A class to manage all Utility Methods
+ */
 export class Utils {
   /**
    * Check if the Product Quantity is between 1 && 100
